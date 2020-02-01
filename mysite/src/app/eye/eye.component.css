@@ -1,0 +1,15 @@
+img{
+    width: 200%;
+    height: 50%;
+  }
+  .div{
+     font-size: 30px;
+  }
+  .nav input[type=text] {
+   float: right;
+   padding: 6px;
+   border: none;
+   margin-top: 8px;
+   margin-right: 16px;
+   font-size: 14px;
+ }

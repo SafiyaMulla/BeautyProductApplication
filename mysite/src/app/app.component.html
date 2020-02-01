@@ -1,0 +1,33 @@
+<router-outlet></router-outlet>
+<nav  class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a   class="active" class="navbar-brand" href="#">Welcome Beauties</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#" routerLink="/app-makeup"  >Makeup</a></li>
+            <li><a href="#" routerLink="/app-skin" >Skin</a></li>
+            <li><a href="#" routerLink="/app-hair">Hair</a></li>
+            <li><a href="#" routerLink="/app-eye">Eye Care </a></li>
+            <li><a href="#" routerLink="/app-lip">Lip Care </a></li>
+            <li><a href="#" routerLink="/app-offer">Offers </a></li>
+           
+            <!-- <li><a href="#"  routerLink="/add-cart/product_id" >My cart</a></li> -->
+         
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" routerLink="/app-search"><span class="glyphicon glyphicon-search"></span>  </a></li>
+              <!-- <li><input  [(ngModel)]="product_name" type="text" placeholder="Search..."></li> -->
+              <li><a href="#" routerLink="/add-cart/:user_id"><span class="glyphicon glyphicon-log-in"></span> Show Cart</a></li>
+            <!-- <li><a href="#"  routerLink="/user-register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+            <li><a href="#" routerLink="/user-login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="#" (click)="onLogout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+      
+
+      <router-outlet></router-outlet>
+<!-- <app-skin></app-skin> -->

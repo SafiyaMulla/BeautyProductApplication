@@ -1,0 +1,29 @@
+
+<table>
+    <tbody>
+        <div    class="col-md-2"></div>
+          
+            <div  class="col-md-4">
+            <tr *ngFor="let product of products">
+              
+            <div class="col-md-4" >
+                
+                  <tr  >
+                    <img  src="http://localhost:4000/{{product.thumbnail}}" width="120" height="80"  />
+                 </tr>
+                 <tr style = "font-size: 25px" >{{product.product_name}}</tr>
+                 <tr style="color:blue ">{{product.product_description}}</tr>
+                 <tr style="color: red ;font-size: 35px"> ₹{{product.product_price}}</tr>
+              <tr ><button style="background-color: crimson" (click)='onCart(product.product_id)'  class="btn btn-success btn-lg">     Add   Cart   </button> </tr>
+             
+             </div>
+            
+            </tr>
+    </div>
+          
+            <div class="col-md-2"></div>
+            
+          </tbody>
+        </table>
+        
+        
